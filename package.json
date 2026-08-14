@@ -1,13 +1,22 @@
 {
   "name": "gittest",
   "version": "1.0.0",
-  "main": "calculate.js",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "node calculate.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Ejercicio de consola: mini sistema de compras en TypeScript",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  },
+  "dependencies": {
+    "awilix": "^13.0.5"
+  }
 }
